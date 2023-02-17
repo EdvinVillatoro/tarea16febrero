@@ -28,10 +28,12 @@
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btnEnviar" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnRegistro" min="-2" max="-2" attributes="0"/>
                   <Component id="btnIngresar" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnPrueba" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="152" max="32767" attributes="0"/>
+              <EmptySpace pref="112" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -39,13 +41,16 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnPrueba" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="btnIngresar" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="221" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btnEnviar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btnRegistro" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="131" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -56,14 +61,24 @@
         <Property name="text" type="java.lang.String" value="hola"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="btnPrueba">
+    <Component class="javax.swing.JButton" name="btnEnviar">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Boton Prueba"/>
+        <Property name="text" type="java.lang.String" value="ENVIAR REPARACION"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnIngresar">
       <Properties>
-        <Property name="text" type="java.lang.String" value="INGRESAR USUARIO"/>
+        <Property name="text" type="java.lang.String" value="INGRESO DE EQUIPO"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnRegistro">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="REGISTRO DE PROPETARIOS"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ENTREGAR EQUIPO"/>
       </Properties>
     </Component>
   </SubComponents>

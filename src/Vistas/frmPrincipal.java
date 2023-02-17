@@ -28,16 +28,22 @@ public class frmPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        btnPrueba = new javax.swing.JButton();
+        btnEnviar = new javax.swing.JButton();
         btnIngresar = new javax.swing.JButton();
+        btnRegistro = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("hola");
 
-        btnPrueba.setText("Boton Prueba");
+        btnEnviar.setText("ENVIAR REPARACION");
 
-        btnIngresar.setText("INGRESAR USUARIO");
+        btnIngresar.setText("INGRESO DE EQUIPO");
+
+        btnRegistro.setText("REGISTRO DE PROPETARIOS");
+
+        jButton1.setText("ENTREGAR EQUIPO");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -48,20 +54,26 @@ public class frmPrincipal extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(82, 82, 82)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnIngresar)
-                    .addComponent(btnPrueba))
-                .addContainerGap(152, Short.MAX_VALUE))
+                    .addComponent(btnEnviar)
+                    .addComponent(jButton1)
+                    .addComponent(btnRegistro)
+                    .addComponent(btnIngresar))
+                .addContainerGap(112, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(56, 56, 56)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(btnPrueba))
-                .addGap(30, 30, 30)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnIngresar)
-                .addContainerGap(221, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(btnEnviar)
+                .addGap(18, 18, 18)
+                .addComponent(btnRegistro)
+                .addGap(18, 18, 18)
+                .addComponent(jButton1)
+                .addContainerGap(131, Short.MAX_VALUE))
         );
 
         pack();
@@ -103,8 +115,10 @@ public class frmPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnEnviar;
     private javax.swing.JButton btnIngresar;
-    private javax.swing.JButton btnPrueba;
+    private javax.swing.JButton btnRegistro;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
