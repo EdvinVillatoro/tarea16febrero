@@ -31,7 +31,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnEnviar = new javax.swing.JButton();
         btnEquipo = new javax.swing.JButton();
         btnRegistro = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        btnEntregar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -44,7 +44,7 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         btnRegistro.setText("REGISTRO DE PROPETARIOS");
 
-        jButton1.setText("ENTREGAR EQUIPO");
+        btnEntregar.setText("ENTREGAR EQUIPO");
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/íconos/computer-monitor-and-keyboard-in-a-rounded-square_icon-icons.com_70762.png"))); // NOI18N
 
@@ -55,7 +55,7 @@ public class frmPrincipal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(95, 95, 95)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1)
+                    .addComponent(btnEntregar)
                     .addComponent(btnRegistro)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -81,7 +81,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(btnRegistro)
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
+                .addComponent(btnEntregar)
                 .addContainerGap(115, Short.MAX_VALUE))
         );
 
@@ -124,10 +124,10 @@ public class frmPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btnEntregar;
     public javax.swing.JButton btnEnviar;
     public javax.swing.JButton btnEquipo;
     public javax.swing.JButton btnRegistro;
-    public javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
