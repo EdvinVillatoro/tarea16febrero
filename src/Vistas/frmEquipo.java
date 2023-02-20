@@ -17,6 +17,7 @@ public class frmEquipo extends javax.swing.JFrame {
         initComponents();
     }
 
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -34,7 +35,9 @@ public class frmEquipo extends javax.swing.JFrame {
         txtModelo = new javax.swing.JTextField();
         txtComputadora = new javax.swing.JTextField();
         txtProblema = new javax.swing.JTextField();
-        btnIngresar = new javax.swing.JButton();
+        btnIngresarpc = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jtEquipo = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -46,30 +49,45 @@ public class frmEquipo extends javax.swing.JFrame {
 
         jLabel4.setText("Problema que presenta");
 
-        btnIngresar.setText("INGRESAR PC");
+        btnIngresarpc.setText("INGRESAR PC");
+
+        jtEquipo.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null}
+            },
+            new String [] {
+                "MARCA", "MODELO", "TIPO", "PROBLEMA"
+            }
+        ));
+        jScrollPane1.setViewportView(jtEquipo);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnIngresarpc)
+                .addGap(50, 50, 50))
+            .addGroup(layout.createSequentialGroup()
                 .addGap(71, 71, 71)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 236, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtMarca)
-                    .addComponent(txtModelo)
-                    .addComponent(txtComputadora)
-                    .addComponent(txtProblema, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE))
-                .addGap(225, 225, 225))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnIngresar)
-                .addGap(50, 50, 50))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 915, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel1))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 421, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtMarca)
+                            .addComponent(txtModelo)
+                            .addComponent(txtComputadora)
+                            .addComponent(txtProblema, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE))
+                        .addGap(225, 225, 225))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -83,7 +101,7 @@ public class frmEquipo extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(txtModelo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(4, 4, 4)
-                .addComponent(btnIngresar)
+                .addComponent(btnIngresarpc)
                 .addGap(3, 3, 3)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
@@ -92,7 +110,9 @@ public class frmEquipo extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(txtProblema, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(417, Short.MAX_VALUE))
+                .addGap(47, 47, 47)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 482, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(39, Short.MAX_VALUE))
         );
 
         pack();
@@ -134,14 +154,16 @@ public class frmEquipo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnIngresar;
+    public javax.swing.JButton btnIngresarpc;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JTextField txtComputadora;
-    private javax.swing.JTextField txtMarca;
-    private javax.swing.JTextField txtModelo;
-    private javax.swing.JTextField txtProblema;
+    private javax.swing.JScrollPane jScrollPane1;
+    public javax.swing.JTable jtEquipo;
+    public javax.swing.JTextField txtComputadora;
+    public javax.swing.JTextField txtMarca;
+    public javax.swing.JTextField txtModelo;
+    public javax.swing.JTextField txtProblema;
     // End of variables declaration//GEN-END:variables
 }

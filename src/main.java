@@ -1,24 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author umg
- */
+import Controllador.equiposController;
+import Modelos.equipoModel;
+import Vistas.frmPrincipal;
+import Vistas.frmEquipo;
+
 public class main {
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
-        //Parte de brit
-        //tu madre bryant
-        //hola papus y mamus
-        System.out.println("hola mundo");
+        
+        frmPrincipal VistaPrincipal = new frmPrincipal();
+        frmEquipo VistaEquipo = new frmEquipo();
+        equipoModel ModeloEquipo = new equipoModel();
+        
+        equiposController ControladorUsuarios = new equiposController(VistaPrincipal,
+                VistaEquipo, ModeloEquipo);
     }
     
 }

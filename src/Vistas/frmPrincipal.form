@@ -35,12 +35,12 @@
                       </Group>
                       <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btnIngresar" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnEquipo" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="btnEnviar" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="132" max="32767" attributes="0"/>
+              <EmptySpace pref="129" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -51,7 +51,7 @@
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="btnIngresar" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnEquipo" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" pref="40" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -75,21 +75,33 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="ENVIAR REPARACION"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="btnIngresar">
+    <Component class="javax.swing.JButton" name="btnEquipo">
       <Properties>
         <Property name="text" type="java.lang.String" value="INGRESO DE EQUIPO"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JButton" name="btnRegistro">
       <Properties>
         <Property name="text" type="java.lang.String" value="REGISTRO DE PROPETARIOS"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
         <Property name="text" type="java.lang.String" value="ENTREGAR EQUIPO"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
