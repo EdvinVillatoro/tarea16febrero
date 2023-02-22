@@ -16,10 +16,10 @@ public class equiposController implements ActionListener{
    
    //Levantar de forma automatica el formulario principal
 
-    public equiposController(frmPrincipal VistaPrincipal, frmEquipo VistaEquipo, equipoModel ModeloUsuarios) {
+    public equiposController(frmPrincipal VistaPrincipal, frmEquipo VistaEquipo, equipoModel ModeloEquipo) {
         this.VistaPrincipal = VistaPrincipal;
         this.VistaEquipo = VistaEquipo;
-        this.Modelequipo = ModeloUsuarios;
+        this.Modelequipo = ModeloEquipo;
         
         
         //Poner a la escucha los botones correspondientes

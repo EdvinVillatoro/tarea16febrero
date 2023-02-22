@@ -9,10 +9,9 @@ import Vistas.frmPrincipal;
 import Vistas.frmEquipo;
 import Vistas.frmPropietarios;
 import Modelos.propietariosModel;
-import Controllador.reparaciónController;
-import Modelos.reparación;
-import Modelos.reparaciónModel;
-import Vistas.frmReparación;
+import Controllador.reparacionController;
+import Modelos.ReparacionModel;
+import Vistas.frmReparacion;
 
 public class main {
     
@@ -25,21 +24,19 @@ public class main {
         entregaModel ModeloEntrega = new entregaModel();
         frmPropietarios VistaPropietarios = new frmPropietarios(VistaPrincipal,true);
         propietariosModel ModeloPropietarios = new propietariosModel();
-        frmReparación VistaReparación = new frmReparación();
-        reparaciónModel ModeloReparación = new reparaciónModel();
+        frmReparacion VistaReparación = new frmReparacion();
+        ReparacionModel ModeloReparación = new ReparacionModel();
        
         
         
        
         
-        equiposController ControladorUsuarios = new equiposController(VistaPrincipal,
-                VistaEquipo, ModeloEquipo, VistaReparación, ModeloReparación);
-        
+        equiposController ControladorEquipos = new equiposController(VistaPrincipal,VistaEquipo, ModeloEquipo);
         entregasController ControladorEntregas = new entregasController(VistaPrincipal, VistaEntrega, ModeloEntrega);
         
         propietariosController ControladorPropietarios = new propietariosController(VistaPrincipal, VistaPropietarios, ModeloPropietarios);
         
-        reparaciónController ControladorReparación = new reparaciónController(VistaPrincipal, VistaReparación, ModeloReparación);
+        reparacionController ControladorReparación = new reparacionController(VistaPrincipal, VistaReparación, ModeloReparación);
     }
     
 }
