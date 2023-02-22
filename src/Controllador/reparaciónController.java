@@ -1,4 +1,6 @@
 package Controllador;
+//HECHO POR BRITANY
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.table.DefaultTableModel;
@@ -7,7 +9,6 @@ import Modelos.reparación;
 import Vistas.frmPrincipal;
 import Vistas.frmPropietarios;
 import Vistas.frmReparación;
-import 
 
 public class reparaciónController implements ActionListener{
     
@@ -26,11 +27,37 @@ public reparaciónController (frmPrincipal VistaPrincipal, frmReparación VistaR
     
     this.VistaPrincipal.setVisible(true);
         this.TablaReparación.addColumn("CÓDIGO DE EQUIPO");
-        this.TablaPropietarios.addColumn("NOMBRE");
-        this.TablaPropietarios.addColumn("TELEFONO");
+        this.TablaReparación.addColumn("DESCRIPCIÓN DE LA REPARACIÓN A REALIZAR");
+        this.TablaReparación.addColumn("TÉCNICO ASIGNADO");
+        this.TablaReparación.addColumn("FECHA DE INGRESO");
             
-        this.VistaPropietario.jtPropietarios.setModel(TablaPropietarios);
+        this.VistaReparación.jtRegistrarreparación.setModel(TablaReparación);
 }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(e.getSource()== this.VistaPrincipal.btnEnviar) {
+            this.VistaReparación.btnRegistrarReparación.addActionListener(this);
+            
+            this.VistaReparación.setLocationRelativeTo(null);
+            this.VistaReparación.setVisible(true);
+            
+        }
+     
+        if(e.getSource()== this.VistaReparación.btnRegistrarReparación){
+            this.TablaReparación.(this.VistaReparación.txtCódigo.getText(),
+                    this.VistaReparación.txtDescripción.getText(),
+                    this.VistaReparación.txtTécnicoAsignado.getText(),
+                    this.VistaReparación.txtFechaingreso.getText());
+            
+            this.TablaReparación.addRow(new Object[ ]{this.ModeloReparación.ListaReparación.get(0).getCódigo(),
+                this.ModeloReparación.ListaReparación.get(0).getDescripción(),
+                this.ModeloReparación.ListaReparación.get(0).getTécnicoAsignado(),
+                this.ModeloReparación.ListaReparación.get(0).getFechaIngreso()});
+            }
+            
+        }
+    }
     
     
     
