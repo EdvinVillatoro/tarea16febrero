@@ -45,7 +45,7 @@ public reparaciónController (frmPrincipal VistaPrincipal, frmReparación VistaR
         }
      
         if(e.getSource()== this.VistaReparación.btnRegistrarReparación){
-            this.TablaReparación.(this.VistaReparación.txtCódigo.getText(),
+            this.TablaReparación.AgregarReparación(this.VistaReparación.txtCódigo.getText(),
                     this.VistaReparación.txtDescripción.getText(),
                     this.VistaReparación.txtTécnicoAsignado.getText(),
                     this.VistaReparación.txtFechaingreso.getText());
